@@ -1,0 +1,28 @@
+'cluster' is the main file which has to be run using MATLAB or GNU-Octave to run the clustering program. It calls various functions, each performing different task according to its name.
+
+The alorithm uses two features to cluster data. Which represent 
+
+1) net profit/loss in a day(stock_price_open - stock_price_close) 
+and 
+2) maximum possible profit(stock_price_high - stock_price_low).
+
+The number of iterations the algorithm performs can be adjusted from the cluster file by changing the variable max_iter.
+Since, the number of data points is quite high, the time taken by the algorithm to perform one iteration highly depends on the computional powress of your system.
+
+Needless to say, higher the number of iterations, higher will be the accuracy of the program.
+
+When the complete algorithm has finished running. You can access the results which are stored in form of variables.
+
+The four numbers displayed are the number of elements in each cluster.
+
+The variables data1, data2, data3, data4* contain the detalils about each stock in a particular cluster. 
+
+Just access these variables for details about each stock in that cluster.
+
+These clusters can be interpreted in any way possible depending upon the final plot. The colored area farther away from the origin is supposed to give more profit than the cluster of points near the origin. 
+
+That interpretation majorly depends upon the understanding of the stock market mechanism. 
+
+*NOTE: Due to some strange pattern in the data provided a particular stock appeared to show exactly some strange anomolous characterstics for 481 continuous days. To prevent such data from affecting the algorithm, the details of the above mentioned stock has been seperately clustered in a seperate cluster (data4).
+
+**Dont forget to import variables from 'finalVariables.mat' before running the algorithm.
